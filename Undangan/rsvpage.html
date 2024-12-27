@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Kehadiran - Pernikahan Azan & Dina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="rsvp-container">
+        <header class="rsvp-header">
+            <h1>Konfirmasi Kehadiran</h1>
+            <p>Mohon konfirmasi kehadiran Anda untuk pernikahan kami yang penuh cinta.</p>
+        </header>
+        <main class="rsvp-form">
+            <form action="/submit-rsvp" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama Anda:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="attendance">Apakah Anda akan hadir?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Ya, saya akan hadir</option>
+                        <option value="no">Tidak bisa hadir</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan atau ucapan:</label>
+                    <textarea id="message" name="message" placeholder="Tulis pesan atau ucapan untuk kami" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+            </form>
+        </main>
+        <footer class="rsvp-footer">
+            <p>Terima kasih atas kehadiran Anda yang sangat berarti bagi kami.</p>
+        </footer>
+    </div>
+</body>
+</html>

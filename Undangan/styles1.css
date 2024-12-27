@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    animation: gradientShift 10s ease infinite;
+}
+
+.rsvp-container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.rsvp-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rsvp-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    color: #d25c8e;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-header p {
+    font-size: 1.3em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    color: #5a5a5a;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: 14px;
+    font-size: 1.1em;
+    border: 2px solid #d25c8e;
+    border-radius: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #ff99cc;
+    box-shadow: 0 0 8px rgba(255, 153, 204, 0.7);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #d25c8e;
+    color: white;
+    font-size: 1.4em;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #ff99cc;
+    transform: scale(1.05);
+}
+
+.rsvp-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.rsvp-footer p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    }
+    50% {
+        background-image: linear-gradient(135deg, #f3c1c1, #f5e1e1);
+    }
+    100% {
+        background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    }
+}

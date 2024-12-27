@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    animation: gradientShift 10s ease infinite;
+}
+
+.invitation-container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.invitation-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.invitation-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    color: #d25c8e;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-header p {
+    font-size: 1.3em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.invitation-details {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.invitation-details h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #d25c8e;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.invitation-details p {
+    font-size: 1.3em;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.event-details {
+    text-align: left;
+    font-size: 1.1em;
+    color: #5a5a5a;
+    margin-top: 60px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+}
+
+.invitation-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.invitation-footer p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.rsvp-link {
+    color: #d25c8e;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #d25c8e;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.rsvp-link:hover {
+    color: #ff99cc;
+    border-color: #ff99cc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    }
+    50% {
+        background-image: linear-gradient(135deg, #f3c1c1, #f5e1e1);
+    }
+    100% {
+        background-image: linear-gradient(135deg, #f5e1e1, #f3c1c1);
+    }
+}
